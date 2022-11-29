@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <style>
+
+            body{
+                background-image: url('https://elements-video-cover-images-0.imgix.net/files/30096678/590pix.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=a49c7d2764cfe26d46264423644527da');
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: 1200px 550px;
+           }
+            table{
+                background-color: rgb(255, 255, 255);
+                border-style: solid;
+                border-color: rgb(17, 16, 16);
+                width: 700;
+                height: 0;
+                box-shadow: inset;
+                margin-left: 260px;
+            }
+            h1{
+                color: rgb(0, 0, 0);
+            }
+            h2{
+                color: rgb(13, 13, 13)
+            }
+        </style>
+    </head>
+
+    <body>
+        <br><br>
+        <h2 align="center">MOVIE DETAILS</h2>
+
+        <table align="center" >
+            <tr>
+                <td>
+                    <h2> Title </h2>
+
+                </td>
+                <td>
+                    <h3><%= moveiName %></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <% if(director.length>0){ %>
+                        <h2>Director</h2>
+                     <% } %>
+                </td>
+                <td>
+                    <h3><%= director %></h3>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <% if(actors.length>0){ %>
+                        <h2>Actors</h2>
+                     <% } %> 
+
+                </td>
+                <td>
+                    <h3> <%= actors %></h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <% if(yearOfrelease.length>0){ %>
+                        <h2>Year of release</h2>
+                     <% } %> 
+
+                </td>
+                <td>
+                    <h3><%= yearOfrelease %></h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <% if(writerOfMovie.length>0){ %>
+                        <h2>Writer</h2>
+                     <% } %> 
+                </td>
+                <td>
+                    <h3>
+                        <%= writerOfMovie %>
+                    </h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <% if(languages.length>0){ %>
+                        <h2>Language</h2>
+                     <% } %> 
+                </td>
+                <td>
+                    <h3><%= languages %></h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <% if(awards.length>0){ %>
+                        <h2>Awards</h2>
+                     <% } %> 
+                </td>
+                <td>
+                    <h3> <%= awards %></h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <% if(genre.length>0){ %>
+                        <h2>Genre</h2>
+                     <% } %> 
+                </td>
+                <td>
+                    <h3> <%= genre %></h3>
+                </td>
+            </tr>
+
+        </table>        
+        
+    </body>
+</html>
+
+

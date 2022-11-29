@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            table{
+                box-shadow: 0px 7px rgb(125, 125, 125);
+                background-color: rgba(125, 121, 121, 0.358);
+                border-style: solid;
+                border-color: rgb(17, 16, 16);
+                
+            }
+           
+            label{
+                margin: width 1000px;
+            }
+    
+            body{
+                background-image: url('./pic.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: contain;
+
+           }
+      
+    
+    
+        </style>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br>
+ 
+<form action="/signupsubmit" method="GET">
+    <center>
+    <table align="center" cellspacing="10" cellpadding="6"  bgcolor="grey" height="200" width="600">
+        <tr>
+            <th  align="center" colspan="3"><h1>Sign Up Here!</h1></th>
+        </tr>
+
+        <tr>
+            <td align="center" colspan="3"> 
+                <label for="name"><b>Name</b></label>
+                <input type="text" id="name" placeholder="Your Full name" name="full_name" required>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3"> 
+                <label for="email"><b>Email</b></label>
+                <input type="text" id="email" placeholder="Your Email" name="email" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td align="center" colspan="3">
+                <label for="password"><b>Password</b></label>
+                <input type="password" id="password" placeholder="Your Password" name="password" required>  
+            </td>
+            
+        </tr>
+        <tr colspan="2">
+            <td align="center" colspan="3"> 
+                <label for="repeatpassword"><b>Re-enter Password</b></label>
+                <input type="password" id="repeatpassword" placeholder="Re-enter Password" name="repeatpassword">
+             
+            </td>
+        </tr>
+        <tr colspan="3">
+            <td align="center">
+
+                <p>By clicking submit you agree to our <a href="#"
+                    style="color:rgb(206, 33, 33)">Privacy Policy</a><p>
+            </td>
+          
+        </tr>
+        <tr colspan="0">
+            <td align="center" colspan="3">
+                <input style="background-color:rgb(209, 63, 15) ; color : white" width="100" type="submit">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <button type="button" class="cancel"  style="background-color:rgb(52, 116, 199) ; color : white ;" width="100">Cancel</button>
+            </td>
+        </tr>
+       
+        
+
+    
+    
+</table></center>
+
+</form>
+
+
+    </body>
+</html>
